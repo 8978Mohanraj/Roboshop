@@ -15,6 +15,7 @@ npm install
 cp /home/centos/Roboshop/catalouge.services /etc/systemd/system/catalouge.services
 systemctl daemon-reload
 systemctl enable catalogue
-systemctl start catalogue
+systemctl restart catalogue
+cp /home/centos/Roboshop/mongo.repo /etc/yum.repos.d/mongo.repo
 yum install mongodb-org-shell -y
 mongo --host MONGODB-SERVER-IPADDRESS </app/schema/catalogue.js
