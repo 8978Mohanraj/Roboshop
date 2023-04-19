@@ -12,7 +12,7 @@ curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue
 cd /app
 unzip /tmp/catalogue.zip
 npm install
-cp /home/centos/Roboshop/catalouge.services /etc/systemd/system/catalouge.services
+cp /home/centos/Roboshop/catalouge.service /etc/systemd/system/catalouge.service
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl restart catalogue
