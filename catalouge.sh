@@ -12,7 +12,7 @@ curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue
 cd /app
 unzip /tmp/catalogue.zip
 npm install
-cp /home/centos/Roboshop/catalouge.service /etc/systemd/system/catalogue.service
+cp /home/centos/Roboshop/catalouge.service C:\Users\gmrku\OneDrive\Desktop\gitrepos
 systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
